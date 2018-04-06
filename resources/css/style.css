@@ -1,0 +1,17 @@
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: Helvetica;
+  font-size: 1rem;
+}
+
+header {
+  background-color: black;
+}
+
+#top {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg");
+  height: 25rem;
+}
