@@ -6,81 +6,88 @@ html {
 
 body {
   font-family: "Helvetica", sans-serif;
-  font-size: 1rem;
-  color: white;
+  line-height: 1.4;
 }
 
-h1, h4 {
+h1,
+h4 {
   font-weight: bold;
 }
 
-h1 {
-  font-size: 2rem;
-  margin-top: 0.25rem;
-}
-
-.flex-container {
-  display: flex;
-  align-items: center;
+.container {
   max-width: 960px;
   margin: 0 auto;
 }
 
 /* Header */
 
-header {
+.company {
   background-color: black;
-  text-align: left;
+  color: white;
 }
 
-header img {
+.company .container {
+  display: flex;
+  align-items: center;
+  padding: .66rem 0 .66rem 0.5rem;
+}
+
+.company img {
   height: 1.5rem;
-  padding-left: 0.5rem;
   padding-right: 1rem;
-}
-
-header span {
-  padding-top: 0.66rem;
-  padding-bottom: 0.66rem;
 }
 
 /* Main Banner */
 
 .main-banner {
   background-image: url("../images/moto.jpeg");
-  background-repeat: none;
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 25rem;
 }
 
+.main-banner .container {
+  display: flex;
+  justify-content: flex-start;
+}
+
 .headline {
   background-color: black;
+  color: white;
   width: 20rem;
   margin-top: 9rem;
   padding: 2rem 3rem;
   position: relative;
 }
 
+.headline h1 {
+  font-size: 2rem;
+  margin: 0.25rem 0;
+  line-height: 1.2;
+}
+
 /* Navigation Bar */
 
 nav {
   background-color: firebrick;
-  padding: 0.75rem;
+  padding: 0.75rem 0;
+  color: white;
 }
 
 nav ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
 /* Products Section */
 
-.products, .business-info {
+.products,
+.business-info {
 display: flex;
 justify-content: space-between;
-margin: 3rem 0 0 0;
+margin: 3rem;
 }
 
 .product {
@@ -97,13 +104,17 @@ margin: 3rem 0 0 0;
 }
 
 .product-image img {
-  border-style: none;
-  max-width: 8em;
+  max-width: 9rem;
+}
+
+.glasses .product-image {
+  padding: 4.37rem 0px;
 }
 
 .description {
   display: block;
   background-color: black;
+  color: white;
   padding: 0.5rem;
   text-align: center;
 }
@@ -128,8 +139,8 @@ margin: 3rem 0 0 0;
 /* Footer */
 
 footer {
-  padding: 5rem 0;
-  text-align: left;
-  background-color: black;
+  padding: 5rem;
   margin-top: 4rem;
+  background-color: black;
+  color: white;
 }
