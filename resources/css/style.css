@@ -19,6 +19,12 @@ h4 {
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+}
+
 /* Header */
 
 .company {
@@ -81,6 +87,20 @@ nav ul {
   align-items: center;
 }
 
+.mobile-nav {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  nav ul {
+    display: none;
+  }
+  .mobile-nav {
+    display: block;
+    text-align: center;
+  }
+}
+
 /* Products Section */
 
 .products,
@@ -117,6 +137,16 @@ margin: 3rem;
   color: white;
   padding: 0.5rem;
   text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .product.glasses {
+    display: none;
+  }
+
+  .product {
+    width: 47%;
+  }
 }
 
 /* Info Section */
