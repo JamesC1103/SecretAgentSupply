@@ -81,7 +81,7 @@ h4 {
   .headline {
     width: 100%;
     padding: 1rem 2rem;
-    top: 1rem;
+    margin-top: 10rem;
   }
 
   .headline h4 {
